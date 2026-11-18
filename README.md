@@ -1,6 +1,6 @@
 # Wabenwatt für Home Assistant
 
-[![Validate](https://github.com/nikdom/wabenwatt-hacs/actions/workflows/validate.yml/badge.svg)](https://github.com/nikdom/wabenwatt-hacs/actions/workflows/validate.yml)
+[![Validate](https://github.com/TeamCato/wabenwatt-hacs/actions/workflows/validate.yml/badge.svg)](https://github.com/TeamCato/wabenwatt-hacs/actions/workflows/validate.yml)
 
 Meldet die aktuelle Leistung deiner PV-Anlage, deines Hausspeichers und deines Netzanschlusses (Zähler) jede Minute an [wabenwatt.de](https://wabenwatt.de) – ohne `configuration.yaml`, ohne Blueprint. *English below.*
 
@@ -16,13 +16,19 @@ Meldet die aktuelle Leistung deiner PV-Anlage, deines Hausspeichers und deines N
 
 ## Installation
 
-**Über HACS (empfohlen):**
+**Über den Marketplace (Home Assistant 2026.11 und neuer, empfohlen):**
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=nikdom&repository=wabenwatt-hacs&category=integration)
+Seit 2026.11 ist HACS als **Marketplace** in Home Assistant eingebaut. Ein Klick auf das Badge öffnet das Repository direkt dort (auf älteren Versionen in HACS):
 
-Oder manuell in HACS: *Integrationen → ⋮ → Benutzerdefinierte Repositories* → `https://github.com/nikdom/wabenwatt-hacs` (Kategorie „Integration“) → installieren → Home Assistant neu starten.
+[![Open your Home Assistant instance and open a repository inside the Marketplace.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=TeamCato&repository=wabenwatt-hacs&category=integration)
 
-**Ohne HACS:** den Ordner `custom_components/wabenwatt` in dein `config/custom_components/` kopieren und Home Assistant neu starten.
+Oder manuell: *Einstellungen → Marketplace → Aus Link hinzufügen* → `TeamCato/wabenwatt-hacs` eintragen (der Marketplace fragt dabei einmal nach der GitHub-Verbindung) → installieren. Ein Neustart ist bei der Erstinstallation nicht nötig, nach Updates schon (eine Reparaturmeldung erinnert daran).
+
+**Über HACS (Home Assistant 2026.10 und älter):** *HACS → Integrationen → ⋮ → Benutzerdefinierte Repositories* → `https://github.com/TeamCato/wabenwatt-hacs` (Kategorie „Integration“) → installieren → Home Assistant neu starten.
+
+> **Repository umgezogen:** Die Integration liegt jetzt unter `TeamCato/wabenwatt-hacs` (vorher `nikdom/wabenwatt-hacs`). Wer sie unter der alten Adresse hinzugefügt hat und keine Updates mehr sieht: die alte Adresse entfernen und die neue hinzufügen. Installation und Einrichtung bleiben erhalten.
+
+**Ohne Marketplace/HACS:** den Ordner `custom_components/wabenwatt` in dein `config/custom_components/` kopieren und Home Assistant neu starten.
 
 ## Einrichtung
 
@@ -92,7 +98,9 @@ Reports the current power of your PV plant, your home storage and your grid conn
 
 ## Installation
 
-Via HACS: use the badge above, or add `https://github.com/nikdom/wabenwatt-hacs` as a custom repository (category *Integration*), install, restart Home Assistant. Without HACS: copy `custom_components/wabenwatt` into your `config/custom_components/` and restart.
+Via the Marketplace (Home Assistant 2026.11 and newer, where HACS is built in): use the badge above, or *Settings → Marketplace → Add from link* → `TeamCato/wabenwatt-hacs` → install; no restart needed on first install, updates ask for one. Home Assistant 2026.10 and older: add `https://github.com/TeamCato/wabenwatt-hacs` in HACS as a custom repository (category *Integration*), install, restart Home Assistant. Without either: copy `custom_components/wabenwatt` into your `config/custom_components/` and restart.
+
+> **Repository moved:** the integration now lives at `TeamCato/wabenwatt-hacs` (formerly `nikdom/wabenwatt-hacs`). If you added the old address and no longer see updates, remove it and add the new one; your installation and setup stay as they are.
 
 ## Setup
 

@@ -5,10 +5,10 @@
     "@nikdom"
   ],
   "config_flow": true,
-  "documentation": "https://github.com/nikdom/wabenwatt-hacs",
+  "documentation": "https://github.com/TeamCato/wabenwatt-hacs",
   "integration_type": "service",
   "iot_class": "calculated",
-  "issue_tracker": "https://github.com/nikdom/wabenwatt-hacs/issues",
+  "issue_tracker": "https://github.com/TeamCato/wabenwatt-hacs/issues",
   "requirements": [],
-  "version": "0.6.0"
+  "version": "0.6.1"
 }
